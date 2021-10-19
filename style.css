@@ -5,7 +5,7 @@ body {
     height: 50vh;
     margin:auto;
     margin-top: 50px;
-    border: 2px dashed black;
+    border: 7px dotted black;
     padding: 15px;
 }
 
@@ -21,29 +21,44 @@ a:hover {
     font-size: 30px;
 }
 
-.giggleContainer {
-    float:left;
-    align-content: center;
+
+/***************************************\
+    playing around with hover effects
+\***************************************/
+#giggleContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 430px;
+    border: 2px dashed gray;
+    border-radius: 15px;
+    padding: 15px;
 }
+
 .giggle {
-    margin: 1px;
     border: 1px solid black;
-    border-radius: 10px;
+    border-radius: 15px;
     width: 15px;
     height: 15px;
     transition: 5s;
+    z-index:2;
 }
 .giggle:hover {
-    width: 25px;
-    height: 25px;
-    transition: 0.2s;
+    width: 35px;
+    height: 35px;
+    transition: 50ms;
+    margin: -10px;
     background-color: purple;
+    z-index: 1;
 }
 
 
-/*  traffic lights  */
+/********************\
+    traffic lights  
+\********************/
 #trafficLight {
-    border: 1px solid black;
+    border: 2px dashed gray;
+    border-radius: 15px;
     float:right;
 }
 #trafficLight>div {

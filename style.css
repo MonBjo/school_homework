@@ -37,7 +37,7 @@ a:hover {
 
 .giggle {
     border: 1px solid black;
-    border-radius: 15px;
+    border-radius: 25px;
     width: 15px;
     height: 15px;
     transition: 5s;

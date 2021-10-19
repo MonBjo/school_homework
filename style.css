@@ -1,3 +1,5 @@
+
+
 body {
     width: 80vw;
     height: 50vh;
@@ -11,4 +13,29 @@ a {
     margin: 10px;
     border: 2px dotted black;
     padding: 5px;
+    transition: 2s;
+}
+
+a:hover {
+    transition: 1s;
+    font-size: 30px;
+}
+
+.giggleContainer {
+    float:left;
+    align-content: center;
+}
+.giggle {
+    margin: 1px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 15px;
+    height: 15px;
+    transition: 5s;
+}
+.giggle:hover {
+    width: 25px;
+    height: 25px;
+    transition: 0.2s;
+    background-color: purple;
 }

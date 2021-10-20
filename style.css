@@ -11,14 +11,9 @@ body {
 
 a {
     margin: 10px;
-    border: 2px dotted black;
+    border: 1px solid black;
     padding: 5px;
-    transition: 2s;
-}
-
-a:hover {
-    transition: 1s;
-    font-size: 30px;
+    box-shadow: 3px 4px gray;
 }
 
 

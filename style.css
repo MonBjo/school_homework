@@ -21,29 +21,41 @@ a {
 \******************/
 
 header {
+    top: 0;
+    position: sticky;
     border: 1px solid blue;
     padding: 15px;
+    background-color: aliceblue;
 }
 
 h1 {
-    font-family: 'Italianno', cursive;
+    text-align: center;
+    font-weight: 100;
+}
+h1>span {
+    font-weight: bold;
 }
 
 main {
     height: auto;
-    border: 1px solid orangered;
+    width: 80vw;
+    border: 1px solid black;
+    padding: 15px;
 }
 
 aside {
     float: right;
-    height: 100%;
+    width: 20vw;
+    height: 150%;
     border: 1px solid green;
     padding: 15px;
+    background-color: beige;
 }
 
 footer {
     border: 1px solid red;
     padding: 15px;
+    background-color: #9b9c1b;
 }
 
 /***************************************\

@@ -1,12 +1,12 @@
-
+* {
+    box-sizing: border-box;
+}
 
 body {
-    width: 80vw;
-    height: 50vh;
-    margin:auto;
-    margin-top: 50px;
-    border: 7px dotted black;
-    padding: 15px;
+    width: 100vw;
+    height:100vh;
+    margin: 0;
+    border: 1px solid black;
 }
 
 a {
@@ -16,6 +16,35 @@ a {
     box-shadow: 3px 4px gray;
 }
 
+/******************\
+    Ada Lovelace
+\******************/
+
+header {
+    border: 1px solid blue;
+    padding: 15px;
+}
+
+h1 {
+    font-family: 'Italianno', cursive;
+}
+
+main {
+    height: auto;
+    border: 1px solid orangered;
+}
+
+aside {
+    float: right;
+    height: 100%;
+    border: 1px solid green;
+    padding: 15px;
+}
+
+footer {
+    border: 1px solid red;
+    padding: 15px;
+}
 
 /***************************************\
     playing around with hover effects

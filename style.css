@@ -1,20 +1,16 @@
 * {
     box-sizing: border-box;
+    color: #080808;
 }
 
 body {
     width: 100vw;
     height:100vh;
     margin: 0;
-    border: 1px solid black;
+    overflow-x: hidden;
+    background-color: f8f1f5;
 }
 
-a {
-    margin: 10px;
-    border: 1px solid black;
-    padding: 5px;
-    box-shadow: 3px 4px gray;
-}
 
 /******************\
     Ada Lovelace
@@ -23,9 +19,10 @@ a {
 header {
     top: 0;
     position: sticky;
-    border: 1px solid blue;
+    box-shadow: 0px 2px 10px black;
+    height: 110px;
     padding: 15px;
-    background-color: aliceblue;
+    background-color: #ecd7e2;
 }
 
 h1 {
@@ -39,23 +36,60 @@ h1>span {
 main {
     height: auto;
     width: 80vw;
-    border: 1px solid black;
-    padding: 15px;
+    padding: 2vh 10vw;
+}
+blockquote {
+    border-left: 3px dashed gray;
+    padding: 10px;
+    font-style: italic;
+    font-size: large;
+}
+address {
+    text-align: right;
 }
 
 aside {
-    float: right;
+    top: 110px;
+    right: 0px;
+    position: fixed;
+    box-shadow: -1px 4px 5px black;
     width: 20vw;
+    min-width: 200px;
     height: 150%;
-    border: 1px solid green;
-    padding: 15px;
-    background-color: beige;
+    border: solid gray;
+    border-width: 1px 0px;
+    padding: 15px 0;
+    background-color: #f2e4ec;
+    text-align: center;
+}
+
+aside>img {
+    width: 17vw;
+    min-width: 150px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+nav>ul {
+    border-top: 3px dashed gray;
+    padding: 0;
+}
+nav>ul>li {
+    list-style:none;
+    margin: 25px 15px;
+    border: 1px solid black;
+    padding: 5px;
+    box-shadow: 2px 4px 5px gray;
+}
+nav>ul>li:hover {
+    box-shadow: inset 0px 0px 8px rgb(17, 44, 16), 
+                2px 4px 5px gray;
 }
 
 footer {
-    border: 1px solid red;
     padding: 15px;
-    background-color: #9b9c1b;
+    background-color: #e6cad9;
+    border-top: 3px dashed gray;
 }
 
 /***************************************\

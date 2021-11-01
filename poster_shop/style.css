@@ -7,6 +7,7 @@ body {
     height:100vh;
     margin: 0;
     background-color: black;
+    color: white;
 }
 
 header {
@@ -23,3 +24,16 @@ header h1 {
     margin-bottom: 15%;
 }
 
+.smallCardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 100px 10%;
+}
+.smallCard {
+    width: 25%;
+    margin: 15px;
+}
+.smallCard img {
+    max-width: 100%;
+}

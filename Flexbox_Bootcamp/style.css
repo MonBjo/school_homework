@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height:100vh;
+    margin: 0;
+    border: 1px solid black;
+}
+body>a {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+}
+
+header {
+    background-color: rgb(230, 230, 230);
+    padding: 5px;
+}
+
+.mainmenu {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+}
+.mainmenu ul {
+    padding: 10px;
+}
+.mainmenu li {
+    list-style: none;
+    margin: 5px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+
+/* Japans flagga */
+
+.flagcontainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+}
+.flag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    width: 600px;
+    box-shadow: 0 0 10px 5px gray;
+    background-color: white;
+}
+
+.flagdot {
+    background-color: rgb(129, 0, 0);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+
+/* Menu Easy */
+
+.menueasy ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(204, 204, 204);
+}
+.menueasy li {
+    width: 25vw;
+    padding: 20px;
+    list-style: none;
+    text-align: center;
+}
+
+.menuselected {
+    background-color: gray;
+    color: white;
+}
+
+
+/* Menu Medium */
+
+.menumedium ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+.menumedium li {
+    padding: 20px;
+    list-style: none;
+    text-align: center;
+}
+
+.menumedium img {
+    align-self: center;
+    height: 50px;
+    float: left;
+}
+
+
+/* Menu Hard */
+
+.menuhard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.menuhard img {
+    height: 50px;
+}
+
+.menuhard ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.menuhard li {
+    padding: 15px;
+    list-style: none;
+    text-align: center;
+}
+
+.menuhard button {
+    width: 80px;
+    margin: 10px;
+}
+
+
+/* Flexbox Fibonacci */
+
+.fibonacciup {
+    display: flex;
+}
+
+.fibonaccidown {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.fibonacciup div, .fibonaccidown div {
+    height: 50px;
+    background-color: lightblue;
+}
+
+.fibonacciup :nth-child(1), .fibonaccidown :nth-child(1) {
+    background-color: rgb(55, 55, 134);
+    flex: 0;
+}
+.fibonacciup :nth-child(2), .fibonaccidown :nth-child(2) {
+    background-color: rgb(32, 60, 143);
+    flex: 1;
+}
+.fibonacciup :nth-child(3), .fibonaccidown :nth-child(3) {
+    background-color: rgb(63, 88, 160);
+    flex: 1;
+}
+.fibonacciup :nth-child(4), .fibonaccidown :nth-child(4) {
+    background-color: rgb(63, 108, 160);
+    flex: 2;
+}
+.fibonacciup :nth-child(5), .fibonaccidown :nth-child(5) {
+    background-color: rgb(63, 132, 160);
+    flex: 3;
+}
+.fibonacciup :nth-child(6), .fibonaccidown :nth-child(6) {
+    background-color: rgb(55, 55, 134);
+    flex: 5;
+}
+.fibonacciup :nth-child(7), .fibonaccidown :nth-child(7) {
+    background-color: rgb(32, 60, 143);
+    flex: 8;
+}
+.fibonacciup :nth-child(8), .fibonaccidown :nth-child(8) {
+    background-color: rgb(63, 88, 160);
+    flex: 13;
+}
+.fibonacciup :nth-child(9), .fibonaccidown :nth-child(9) {
+    background-color: rgb(63, 108, 160);
+    flex: 21;
+}
+.fibonacciup :nth-child(10), .fibonaccidown :nth-child(10) {
+    background-color: rgb(63, 132, 160);
+    flex: 34;
+}

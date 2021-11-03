@@ -60,9 +60,37 @@ header .menu ul li {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    max-width: 1000px;
+    margin: 40px auto;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-article {
+.cardWrapper article {
     display: flex;
     flex-direction: column;
+    width: 30%;
+    height: 500px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    margin: 9px;
+}
+.cardWrapper .big {
+    width: 62%;
+}
+
+.cardWrapper article .hamburgerMenu {
+    position: absolute;
+    margin-left: 24%;
+    margin-top: 1%;
+}
+
+.cardWrapper article>div {
+    width: 100%;
+    height: 250px;
+    background-color: #BDBDBD; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cardWrapper article>div img {
+    width: 50px;
 }

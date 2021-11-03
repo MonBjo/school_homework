@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height:100vh;
+    margin: 0;
+}
+
+header {
+    padding: 10px;
+    margin: 0 15vmax;
+}
+header img {
+    height: 50px;
+    float: left;
+}
+header .menu ul {
+    float: right;
+    font-family: Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+header .menu ul li {
+    margin: 10px 10px;
+}
+
+.hero {
+    width: 100%;
+    height: 50%;
+    padding-top: 10%;
+    background-color: #333333;
+    font-family: Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.hero h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    color: white;
+}
+
+.hero button {
+    padding: 15px 20px;
+    border-radius: 50px;
+    border:1px solid white;
+    font-weight: 500;
+}
+
+.cardWrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+}

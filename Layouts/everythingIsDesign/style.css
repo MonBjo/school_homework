@@ -94,3 +94,28 @@ header .menu ul li {
 .cardWrapper article>div img {
     width: 50px;
 }
+
+.quote {
+    height: 200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.quote .placeholder {
+    height: 70px;
+    width: 70px;
+    border-radius: 100px;
+    background-color: #BDBDBD;
+}
+
+.quote quote {
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.quote address {
+    font-weight: 700;
+}

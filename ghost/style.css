@@ -14,9 +14,6 @@ body {
 .ghostContainer {
     transition: 5s;
 }
-.ghostContainer :hover {
-
-}
 
 .ghostContainer *{
     background-color: white;

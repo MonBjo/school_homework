@@ -10,6 +10,11 @@ body {
     margin: 0;
 }
 
+
+/************\
+    HEADER 
+\************/
+
 header {
     padding: 10px;
     margin: 0 15vmax;
@@ -28,6 +33,11 @@ header .menu ul {
 header .menu ul li {
     margin: 10px 10px;
 }
+
+
+/**********\
+    HERO 
+\**********/
 
 .hero {
     width: 100%;
@@ -53,6 +63,11 @@ header .menu ul li {
     border:1px solid white;
     font-weight: 500;
 }
+
+
+/***********\
+    CARDS 
+\***********/
 
 .cardWrapper {
     display: flex;
@@ -95,9 +110,12 @@ header .menu ul li {
     width: 50px;
 }
 
+/***********\
+    QUOTE 
+\***********/
 .quote {
     height: 200px;
-    margin: auto;
+    margin: 150px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -118,4 +136,54 @@ header .menu ul li {
 
 .quote address {
     font-weight: 700;
+}
+
+/************\
+    FOOTER 
+\************/
+
+footer {
+    background-color: #4F4F4F;
+}
+
+footer .footerWrap {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+    max-width: 900px;
+    font-family: Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+footer .footerWrap h1 {
+    font-size: 1.6rem;
+}
+
+footer .footerWrap .footerSection {
+    flex: 2;
+    margin: 100px 50px;
+    min-width: 160px;
+}
+footer .footerWrap .footerSection:first-child {
+    flex: 1;
+}
+footer .footerWrap .footerSection:last-child {
+    flex: 1;
+}
+
+footer .footerWrap .footerSection ul {
+    padding-left:0;
+    line-height: 2;
+}
+footer .footerWrap .footerSection li {
+    list-style: none;
+}
+
+footer .footerWrap .footerSection .socialIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer .footerWrap .footerSection .socialIcons img {
+    width: 40px;
 }

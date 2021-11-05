@@ -16,6 +16,11 @@ body h1 {
     font-size: 3rem;
 }
 
+button {
+    padding: 10px 30px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 3px;
+}
 
 header {
     display: flex;
@@ -25,7 +30,9 @@ header {
     background-color: #eee;
 }
 
-/* HEADERBAR */
+/***************
+    HEADERBAR 
+ ***************/
 
 header .headerbar {
     display: flex;
@@ -55,12 +62,11 @@ header .headerbar nav ul li:hover {
     color: #222;
 }
 
-header .headerbar button {
-    padding: 10px 30px;
-}
 
 
-/* HERO */
+/**********
+    HERO 
+ **********/
 
 header .hero {
     display: flex;
@@ -105,22 +111,39 @@ header .hero .getApp img {
 .products .cardWrapper {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 }
 
-.products .cardWrapper .productCard {
-    border: 1px solid blue;
+.products .cardWrapper .card {
     margin: 20px;
     background-color: #eee;
+    text-align: center;
+    flex: 1;
 }
 
-.products .cardWrapper .productCard .placeholder {
+.products .cardWrapper .product .placeholder {
     width: 200px;
     height: 200px;
     text-align: center;
 }
+.products .cardWrapper .product .placeholder img {
+    height: 50%;
+    margin-top: 25%;
+}
 
-.products .cardWrapper .productCard .placeholder img {
-    height: 50%
+.products .cardWrapper .product h2 {
+    font-weight: 700;
+}
+
+.products .cardWrapper .collection {
+    flex: 2;
+    background-color: #343332;
+    padding: 50px;
+    color: white;
+}
+.products .cardWrapper .collection button {
+    border-color: white;
+    color: white;
 }

@@ -17,39 +17,65 @@ body h1 {
 }
 
 
-/************
-    HEADER
- ************/
-
 header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+}
+
+/* HEADERBAR */
+
+header .headerbar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 40px;
+    width: 100%;
+    padding: 20px 40px;
 }
 
-header img {
+header .headerbar img {
     height: 40px;
 }
 
-header nav ul {
+header .headerbar nav ul {
     display: flex;
     flex-direction: row;
     padding: 0;
 }
 
-header nav ul li {
+header .headerbar nav ul li {
     list-style: none;
     margin: 0 20px;
     color: rgb(94, 94, 94);
 }
-header nav ul li:hover {
+header .headerbar nav ul li:hover {
     color: #222;
 }
 
-header button {
+header .headerbar button {
     padding: 10px 30px;
+}
+
+
+/* HERO */
+
+header .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    text-align: center;
+ }
+
+header .hero .getApp {
+    margin: 50px 0;
+}
+header .hero .getApp img {
+    margin: 0 20px;
 }
 
 
@@ -62,26 +88,6 @@ header button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-/**********
-    HERO
- **********/
-
-main .hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 500px;
-    text-align: center;
- }
-
-main .hero .getApp {
-    margin: 50px 0;
-}
-main .hero .getApp img {
-    margin: 0 20px;
 }
 
 

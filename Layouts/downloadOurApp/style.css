@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -6,7 +8,113 @@ body {
     width: 100vw;
     height:100vh;
     margin: 0;
-    background-color: rgb(28, 33, 56);
-    color: white;
     font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    color: #222;
+}
+body h1 {
+    font-size: 3rem;
+}
+
+
+/************
+    HEADER
+ ************/
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 40px;
+}
+
+header img {
+    height: 40px;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+header nav ul li {
+    list-style: none;
+    margin: 0 20px;
+    color: rgb(94, 94, 94);
+}
+header nav ul li:hover {
+    color: #222;
+}
+
+header button {
+    padding: 10px 30px;
+}
+
+
+/**********
+    MAIN
+ **********/
+
+ main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/**********
+    HERO
+ **********/
+
+main .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    text-align: center;
+ }
+
+main .hero .getApp {
+    margin: 50px 0;
+}
+main .hero .getApp img {
+    margin: 0 20px;
+}
+
+
+/**************
+    PRODUCTS
+ **************/
+.products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+}
+
+.products .cardWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.products .cardWrapper .productCard {
+    border: 1px solid blue;
+    margin: 20px;
+    background-color: #eee;
+}
+
+.products .cardWrapper .productCard .placeholder {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+
+.products .cardWrapper .productCard .placeholder img {
+    height: 50%
 }

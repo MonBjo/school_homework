@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height:100vh;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.diceWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.dice {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    border-radius: 20px;
+    border: 5px solid gray;
+    display: grid;
+    gap: 5px;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.dice aside {
+    background-color: gray;
+    border-radius: 30px;
+}
+
+.diceWrapper .dots-1 :nth-child(1) {
+    grid-row: 3 / 4;
+    grid-column: 3 / 4;
+}
+
+.diceWrapper .dots-2 :nth-child(1) {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+.diceWrapper .dots-2 :nth-child(2) {
+    grid-row: 4/5;
+    grid-column: 4/5;
+}
+
+.diceWrapper .dots-3 :nth-child(1) {
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+.diceWrapper .dots-3 :nth-child(2) {
+    grid-row: 3/4;
+    grid-column: 3/4;
+}
+.diceWrapper .dots-3 :nth-child(3) {
+    grid-row: 4/5;
+    grid-column: 4/5;
+}
+
+.diceWrapper .dots-4 :nth-child(1) {
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+.diceWrapper .dots-4 :nth-child(2) {
+    grid-row: 2/3;
+    grid-column: 4/5;
+}
+.diceWrapper .dots-4 :nth-child(3) {
+    grid-row: 4/5;
+    grid-column: 2/3;
+}
+.diceWrapper .dots-4 :nth-child(4) {
+    grid-row: 4/5;
+    grid-column: 4/5;
+}
+
+.diceWrapper .dots-5 :nth-child(1) {
+    grid-row: 2/3;
+    grid-column: 2/3;
+}.diceWrapper .dots-5 :nth-child(2) {
+    grid-row: 2/3;
+    grid-column: 4/5;
+}.diceWrapper .dots-5 :nth-child(3) {
+    grid-row: 4/5;
+    grid-column: 2/3;
+}.diceWrapper .dots-5 :nth-child(4) {
+    grid-row: 4/5;
+    grid-column: 4/5;
+}.diceWrapper .dots-5 :nth-child(5) {
+    grid-row: 3/4;
+    grid-column: 3/4;
+}
+
+.diceWrapper .dots-6 :nth-child(1) {
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+.diceWrapper .dots-6 :nth-child(2) {
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+.diceWrapper .dots-6 :nth-child(3) {
+    grid-row: 4/5;
+    grid-column: 2/3;
+}
+.diceWrapper .dots-6 :nth-child(4) {
+    grid-row: 2/3;
+    grid-column: 4/5;
+}
+.diceWrapper .dots-6 :nth-child(5) {
+    grid-row: 3/4;
+    grid-column: 4/5;
+}
+.diceWrapper .dots-6 :nth-child(6) {
+    grid-row: 4/5;
+    grid-column: 4/5;
+}
+
+
+.diceWrapperTwo {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.diceWrapperTwo .dice aside:nth-child(1) {
+    grid-area: dot1;
+}
+.diceWrapperTwo .dice aside:nth-child(2) {
+    grid-area: dot2;
+}
+.diceWrapperTwo .dice aside:nth-child(3) {
+    grid-area: dot3;
+}
+.diceWrapperTwo .dice aside:nth-child(4) {
+    grid-area: dot4;
+}
+.diceWrapperTwo .dice aside:nth-child(5) {
+    grid-area: dot5;
+}
+.diceWrapperTwo .dice aside:nth-child(6) {
+    grid-area: dot6;
+}
+
+.diceWrapperTwo .dots-1 {
+    grid-template-areas: 
+    ". . . . ."
+    ". . . . ."
+    ". . dot1 . ."
+    ". . . . ."
+    ". . . . .";
+}
+.diceWrapperTwo .dots-2 {
+    grid-template-areas: 
+    ". . . . ."
+    ". dot1 . . ."
+    ". . . . ."
+    ". . . dot2 ."
+    ". . . . .";
+}
+.diceWrapperTwo .dots-3 {
+    grid-template-areas: 
+    ". . . . ."
+    ". dot1 . . ."
+    ". . dot2 . ."
+    ". . . dot3 ."
+    ". . . . .";
+}
+.diceWrapperTwo .dots-4 {
+    grid-template-areas: 
+    ". . . . ."
+    ". dot1 . dot2 ."
+    ". . . . ."
+    ". dot3 . dot4 ."
+    ". . . . .";
+}
+.diceWrapperTwo .dots-5 {
+    grid-template-areas: 
+    ". . . . ."
+    ". dot1 . dot2 ."
+    ". . dot3 . ."
+    ". dot4 . dot5 ."
+    ". . . . .";
+}
+.diceWrapperTwo .dots-6 {
+    grid-template-areas: 
+    ". . . . ."
+    ". dot1 . dot2 ."
+    ". dot3 . dot4 ."
+    ". dot5 . dot6 ."
+    ". . . . .";
+}

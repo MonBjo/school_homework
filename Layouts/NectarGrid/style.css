@@ -70,7 +70,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    height: 30%;
+    height: 100%;
 }
 
 
@@ -92,5 +92,75 @@ main .introduction h1 span {
 
 main .recipiesWrapper {
     display: grid;
-    
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 440px;
+    max-width: 1000px;
+}
+
+main .recipiesWrapper .recipeCard {
+    background-color: white;
+}
+
+/* big card */
+main .recipiesWrapper .bigCard {
+    grid-column: 1 / 4;
+    grid-row: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+main .recipiesWrapper .bigCard figure {
+    flex: 2;
+    margin: 0;
+    padding: 0;
+}
+main .recipiesWrapper .bigCard figure img {
+    width: 100%;
+    height: 200%;
+    margin-top: -20%;
+}
+
+/* Content of big card*/
+main .recipiesWrapper .bigCard .content {
+    flex: 1;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+main .recipiesWrapper .bigCard .content .interact {
+    align-self: flex-end;
+}
+main .recipiesWrapper .bigCard .content .interact img {
+    padding: 0px 10px;
+    margin: auto;
+}
+
+main .recipiesWrapper .bigCard .content .rating {
+    margin-bottom: 15px;
+}
+main .recipiesWrapper .bigCard .content .rating * {
+    display: inline;
+    margin: auto;
+}
+
+main .recipiesWrapper .bigCard .content h1, h4 {
+    margin: 0;
+}
+main .recipiesWrapper .bigCard .content h1 {
+    font-weight: 400;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+}
+
+main .recipiesWrapper .bigCard .content p {
+    line-height: 1.5rem;
+}
+
+main .recipiesWrapper .bigCard .content > :last-child {
+    height: 50px;
+    align-self: flex-end;
+    margin-top: auto;
 }

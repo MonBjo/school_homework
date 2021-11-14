@@ -213,3 +213,18 @@ main button {
     background-color: #eeeeee00;
 }
 
+/* CATEGORIES */
+
+main .categoryWrapper {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    text-align: center;
+    border: 1px solid blue;
+}
+main .categoryWrapper .roundImg {
+    height: 150px;
+    width: 150px;
+    border-radius: 150px;
+    border: 1px solid green;
+}

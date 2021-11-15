@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height:100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: wheat;
+}
+
+.calender {
+    /* this combination makes it actually 
+        take up it's full possible width */
+    max-width: 499px;
+    width: 100%;
+
+    background-color: rgb(194, 182, 182);
+    border-radius: 16px 16px 0 0;
+    overflow: hidden;
+}
+
+.calender header {
+    background-color: rgb(182, 56, 56);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calender main {
+    display: none;
+}

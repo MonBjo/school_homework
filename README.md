@@ -7,4 +7,4 @@ Except for the basic things about HTML and CSS we have worked on:
 
 We got an [assingment](https://github.com/Hampus83/insurance-exam) wich is grade-based and I  worked on it with [Hampus](https://github.com/Hampus83). (Great job!)
 
-3. Interactivenes
+3. Responsive

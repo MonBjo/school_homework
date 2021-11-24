@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    min-height: 50px;
 }
 
 body {
@@ -10,7 +9,75 @@ body {
 }
 
 .wrapper {
-    display: grid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     gap: 20px;
-    grid-template-columns: repeat(3, 1fr);
+    margin: 20px;
+}
+
+.wrapper figure {
+    background-color: palevioletred;
+    min-height: 50px;
+    min-width: 50px;
+    border-radius: 50px;
+    margin-right: auto;
+}
+
+.wrapper main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 100%;
+    min-height: 200px;
+    grid-template-areas: 
+    "pu1 pi1"
+    "pi2 pu2";
+}
+
+.wrapper main .purpleone { grid-area: pu1; }
+.wrapper main .purpletwo { grid-area: pu2; }
+.wrapper main .pinkone { grid-area: pi1; }
+.wrapper main .pinktwo { grid-area: pi2; }
+
+.wrapper main .purple {
+    background-color: plum;
+    min-height: 50px;
+    min-width: 50%;
+}
+
+.wrapper main .pink {
+    background-color: pink;
+    min-height: 50px;
+    min-width: 50%;
+}
+
+.wrapper button {
+    background-color: paleturquoise;
+    border: 0px;
+    border-radius: 50px;
+    min-width: 150px;
+    min-height: 50px;
+}
+
+.wrapper footer {
+    background-color: palegreen;
+    width: 100%;
+    min-height: 50px;
+}
+
+@media screen and (max-width: 500px) {
+    .wrapper figure {
+        margin: auto;
+    }
+
+    .wrapper main {
+        width: 100%;
+        grid-template-areas: 
+            "pi1 pi1"
+            "pu1 pu1"
+            "pi2 pi2"
+            "pu2 pu2";
+    }
 }

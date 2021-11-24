@@ -10,7 +10,82 @@ body {
 }
 
 .wrapper {
+    margin: 40px;
     display: grid;
     gap: 20px;
+}
+
+.wrapper figure {
+    background-color: green;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    margin: 20px auto;
+}
+
+.wrapper header {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.wrapper header section {
+    background-color: greenyellow;
+    min-height: 50px;
+    min-width: 50px;
+    border-radius: 50px;
+}
+
+.wrapper main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 0px 30px;
+}
+
+.wrapper main section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+}
+.wrapper main section article {
+    background-color: yellow;
+    min-height: 50px;
+    min-width: 50px;
+}
+
+.wrapper main aside {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5px;
+
+}
+.wrapper main aside section {
+    background-color: orange;
+    min-height: 25px;
+    min-width: 50px;
+}
+
+.wrapper footer {
+    background-color: orangered;
+    height: 50p;
+    width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+    .wrapper header {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .wrapper main {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0;
+    }
+
+    .wrapper main section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .wrapper main aside {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }

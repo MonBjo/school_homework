@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    min-height: 50px;
 }
 
 body {
@@ -10,7 +9,55 @@ body {
 }
 
 .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+.wrapper * {
+    width: 100%;
+}
+
+.wrapper header {
     display: grid;
-    gap: 20px;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+}
+.wrapper header section {
+    background-color: rgb(158, 116, 197);
+    min-height: 50px;
+    max-width: 100%;
+}
+
+.wrapper main {
+    display: grid;
+    gap: 10px;
     grid-template-columns: repeat(3, 1fr);
+}
+.wrapper main section {
+    background-color: aquamarine;
+    height: 500px;
+    max-width: 100%;
+}
+
+.wrapper footer {
+    background-color: pink;
+    min-height: 50px;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+    .wrapper header {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
+
+    .wrapper main {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .wrapper main section {
+        height: 150px;
+    }
 }

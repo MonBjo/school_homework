@@ -1,4 +1,4 @@
-# school homework
+# School homework HTML and CSS
 This is the homework that I've done, roughly categorized. Althrough I have played around with CSS and HTML before -so I had a lot knowledge already- I have also learned a lot. My way of doing *was* quite oldschool. <br>
 It's like I've upgraded my sword to a lightsaber. 
 

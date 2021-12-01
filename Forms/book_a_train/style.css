@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height:100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    width: 400px;
+    height: 750px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    overflow: hidden;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header {
+    color: #000000d5;
+    background-color: #CECECE;
+    text-align: center;
+    width: 100%;
+}
+
+.header__travelroute {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    line-height: 0;
+    text-align: start;
+}
+.header__travelroute p {
+    font-size: 10px;
+    color: #00000060;
+}
+
+.header__routestart {
+    background-color: #E2E2E2;
+    padding: 5px 40px;
+}
+
+.header__routeend {
+    background-color: #ECECEC;
+    padding: 5px 40px;
+}
+
+
+.booking {
+    height: 100%;
+    padding: 20px 0;
+    color: #000000;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    grid-template-areas:
+    "sclass fclass"
+    "tickets title"
+    "fname fname"
+    "lname lname"
+    "terms terms"
+    "button button";
+}
+
+.booking__input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: 2px solid gray;
+}
+
+.booking__secondclass {
+    grid-area: sclass;
+}
+
+.booking__firstclass {
+    grid-area: fclass;
+}
+
+.booking__firstclass .booking__input, 
+.booking__secondclass .booking__input,
+.booking__terms .booking__input {
+    width: fit-content;
+    height: 15px;
+    width: 15px;
+}
+
+
+.booking__numberoftickets {
+    grid-area: tickets;
+}
+
+.booking__persontitle {
+    grid-area: title;
+}
+
+.booking__firstname {
+    grid-area: fname;
+}
+
+.booking__lastname {
+    grid-area: lname;
+}
+
+.booking__terms {
+    grid-area: terms;
+}
+
+
+.booking__button {
+    grid-area: button;
+    font-size: 25px;
+    font-weight: bolder;
+    color: #ffffff;
+    background-color: #000000;
+    border: #000000;
+    border-radius: 10px;
+}
+

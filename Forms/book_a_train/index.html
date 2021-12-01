@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/favicon.png"/>
+    <meta name="description" content="A short description">
+    <meta name="author" content="MonBjo">
+
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+
+    <title>Min sida</title>
+</head>
+<body>
+    <main>
+        <header class="header">
+            <h1>ÅKA TÅG</h1>
+            
+            <section class="header__travelroute">
+                <aside class="header__routestart">
+                    <h2>Stockholm</h2>
+                    <p>10.30</p>
+                </aside>
+                
+                <aside class="header__routeend">
+                    <h2>Göteborg</h2>
+                    <p>14.45</p>
+                </aside>
+            </section>
+        </header>
+
+        <form class="booking">
+            <aside class="booking__secondclass">
+                <input class="booking__input" type="radio" id="secondclass">
+                <label class="booking__lable" for="secondclass">2:klass</label>
+            </aside>
+            
+            <aside class="booking__firstclass">
+                <input class="booking__input" type="radio" id="firstclass">
+                <label class="booking__lable" for="firstclass">1:klass</label>
+            </aside>
+
+            <aside class="booking__numberoftickets">
+                <lable class="booking__lable" for="ticket">Antal biljetter</lable>
+                <select class="booking__input" id="ticket">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            </aside>
+
+            <aside class="booking__persontitel">
+                <lable class="booking__lable" for="titel">Titel</lable>
+                <select class="booking__input" id="titel">
+                    <option>Mr</option>
+                    <option>Ms</option>
+                    <option>Mrs</option>
+                    <option>Mx</option>
+                </select>
+            </aside>
+
+            <section class="booking__firstname">
+                <lable class="booking__lable" for="firstname">Förnamn</lable>
+                <input class="booking__input" type="text" id="firstname">
+            </section>
+
+            <section class="booking__lastname">
+                <lable class="booking__lable" for="lastname">Efternamn</lable>
+                <input class="booking__input" type="text" id="lastname">
+            </section>
+
+            <section class="booking__terms">
+                <input class="booking__input" type="checkbox" id="terms">
+                <lable class="booking__lable" for="terms">Godkänner villkoren</lable>
+            </section>
+
+            <button class="booking__button">Boka biljetter</button>
+        </form>
+    </main>
+</body>
+</html>

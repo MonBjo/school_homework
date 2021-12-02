@@ -6,4 +6,26 @@ body {
     width: 100vw;
     height:100vh;
     margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+body * {
+    height: 200px;
+    width: 150px;
+    transition: 1s;
+    border-radius: 5px;
+    transform-origin: 50% 150%;
+}
+
+div { background-color: #F60000; }
+div div { background-color: #FF8C00; }
+div div div { background-color: #4DE94C; }
+div div div div { background-color: #3783FF; }
+div div div div div { background-color: #FFEE00; }
+div div div div div div { background-color: #4815AA; }
+
+div:hover { transform: rotate(-25deg); }
+div *:hover { transform: rotate(10deg); }

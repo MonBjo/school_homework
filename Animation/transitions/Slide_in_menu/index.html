@@ -9,11 +9,16 @@
     <meta name="author" content="MonBjo">
 
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="script.js"></script>
+    <script>
+        document.querySelector('.toggle')
+            .addEventListener('click', (e) => {
+                document.querySelector('nav').classList.toggle('open')
+            })
+    </script>
 
     <title>Min sida</title>
 </head>
 <body>
- 
+ <!-- Ni ska alltså ha en knapp med en klass som heter .toggle som kommer att trigga er meny och lägga till en klass som heter .open på er nav-tagg -->
 </body>
 </html>

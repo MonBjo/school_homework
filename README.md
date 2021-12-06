@@ -11,4 +11,4 @@ It's like I've upgraded my sword to a lightsaber.
 4. Forms
 6. Animations (with css)
 
-    Individual assignment
+    [Individual assignment](https://github.com/MonBjo/bonz.ai_hotel) wich is grade-based.

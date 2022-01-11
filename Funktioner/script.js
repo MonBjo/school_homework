@@ -63,3 +63,11 @@ function addition(one, two) {
 function subtract(one, two) {
     console.log(one - two);
 }
+
+
+/* --- övning 4 --- */
+
+
+
+
+/* --- övning 5 --- */

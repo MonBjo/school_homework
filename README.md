@@ -27,3 +27,4 @@ I'm having a small project to create a Discord-bot and I struggled greatly with 
 7. Flow Control
 8. Funktioner
 9. Arrays
+10. Objects

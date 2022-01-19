@@ -17,14 +17,14 @@ I'm having a small project to create a Discord-bot and I struggled greatly with 
 
 3. Responsive
 4. Forms
-6. Animations (with css)
+5. Animations (with css)
 
     [Individual assignment](https://github.com/MonBjo/bonz.ai_hotel) wich is grade-based.
 
 *( Some psuedocode for a coupel of weeks.. )*
 
 ## Javascript with ES6+
-7. Flow Control
-8. Funktioner
-9. Arrays
-10. Objects
+6. Flow Control
+7. Funktioner
+8. Arrays
+9. Objects

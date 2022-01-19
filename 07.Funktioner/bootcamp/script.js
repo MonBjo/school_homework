@@ -24,3 +24,33 @@ function getTheYear(aDate) {
 
     return year;
 }
+
+
+/* --- övning 3 --- */
+console.log(`--- övning 3 ---`);
+
+let numOne = "5";
+let numTwo = 10;
+let op = "*";
+
+console.log(`numOne: ${numOne}`);
+console.log(`numTwo: ${numTwo}`);
+console.log(`operator: ${op}`);
+console.log(`result: ${doCalculate(numOne, numTwo, op)}`);
+
+function doCalculate(numberOne, numberTwo, operator) {
+    parseInt.numberOne;
+    parseInt.numberTwo;
+
+    if(operator == "*"){
+        return numberOne * numberTwo;
+    } else if(operator == "/"){
+        return numberOne / numberTwo;
+    } else if(operator == "+"){
+        return numberOne + numberTwo;
+    } else if(operator == "-"){
+        return numberOne - numberTwo;
+    } else {
+        return "something went wrong";
+    }
+}

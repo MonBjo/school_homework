@@ -24,7 +24,4 @@ I'm having a small project to create a Discord-bot and I struggled greatly with 
 *( Some psuedocode for a coupel of weeks.. )*
 
 ## Javascript with ES6+
-6. Flow Control
-7. Funktioner
-8. Arrays
-9. Objects
+6. Basics

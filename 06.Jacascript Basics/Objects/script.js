@@ -35,15 +35,19 @@ function findBook(title) {
 console.log(findBook("Båtäventyr på västkusten"));
 
 
-// letterFrequency("kalle") // => {"k": 1. "a": 1, "l": 2, "e": 1}
 
-console.log(letterFrequency("kalle"));
+console.log(letterFrequency("hej på dig"));
 
 function letterFrequency(word) {
+    let letters = {};
     word.toLowerCase();
-    let letters = [];
 
-    while (word != "") {
+    for(let char of word){
+        if(letters[char] == undefined) {
+            letters[char] = 1; // Creates a new key in object
+        } else {
+            letters[char]++;
+        }
     }
     
     return letters;
@@ -100,4 +104,24 @@ function filterEmailOnly() {
         usersFilterEmail.push(users[i].email);
     }
     return usersFilterEmail;
+}
+
+
+console.log(reformatEmails());
+
+function reformatEmails() {
+    for(let user of users) {
+
+        switch(user.nat) {
+            case "GB":
+                user.email = `${user.name.last}.${user.name.first}@evilcorp.uk`;
+                break;
+            case "ES":
+                user.email = `${user.name.last}.${user.name.first}@evilcorp.ee`;
+                break;
+            default:
+                user.email = `${user.name.last}.${user.name.first}@evilcorp.${user.nat.toLowerCase()}`;
+        }
+    }
+    return users;
 }

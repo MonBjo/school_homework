@@ -1,5 +1,5 @@
 # School Homework
-This is the homework that I've done, roughly categorized. 
+_This is the homework that I've done, roughly categorized. _
 
 ### HTML and CSS
 Althrough I have played around with CSS and HTML before -so I had a lot knowledge already- I have also learned a lot. My way of doing *was* quite oldschool. <br>

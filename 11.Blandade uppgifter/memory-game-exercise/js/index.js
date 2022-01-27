@@ -1,60 +1,69 @@
 let cardsElem = document.querySelectorAll('.memory-card');
-let winElem = document.querySelectorAll('.overlay');
+let winElem = document.querySelector('.overlay');
+let winExitElem = document.querySelector('.close');
+
 let cardsToCompare = [];
 let pairsFound = 0;
+shuffleCards();
+
 console.log(cardsElem);
+
+
+/*  *  *  *  *  *  TODO  *  *  *  *  *  *\
+  - Make cards unclickable when the
+   front of the card is visible
+\*  *  *  *  *  *  *  *  *  *  *  *  *  */
 
 for(let card of cardsElem) {
     //console.log("card: ", card);
-    //console.log(card.attributes[1].value);
-    
     card.addEventListener('click', (event) => {
-        //console.log(`---------------------`);
-        //console.log(`click card: `, card);
-        //console.log(`click event: `, event);
         card.classList.add('flip');
-        
         compareCards(card);
-        
     });
 }
 
-function compareCards(card){
+function shuffleCards() {
+    let cardsHolderElem = document.querySelector('.memory-cards');
+    for (let i = cardsHolderElem.children.length; i >= 0; i--) {
+        cardsHolderElem.appendChild(cardsHolderElem.children[Math.random() * i | 0]);
+    }
+}
 
+
+function compareCards(card){
     setTimeout(() => {
         let value = card.attributes[1].value;
         console.log(`value: `, value);
         cardsToCompare.push({value: value, card: card});
     
         if(cardsToCompare.length == 2) {
-            if(!checkMatch()) {
-                
-            }
+            checkMatch();
             cardsToCompare = [];
             console.log(`Pairs so far: ${pairsFound}`);
             console.log('----------');
         }
-    }, 1500);
+    }, 1000);
+}
 
 
-    function checkMatch(){
-        console.log('cards to compare: ', cardsToCompare);
-        if(cardsToCompare[0].value == cardsToCompare[1].value){
-            pairsFound++;
-            if(pairsFound == 8){
-                overlayWin(); 
-            }
-            return true;
-        } else {
-            flipBack();
-            return false;
+function checkMatch(){
+    console.log('cards to compare: ', cardsToCompare);
+    if(cardsToCompare[0].value == cardsToCompare[1].value){
+        pairsFound++;
+        console.log(`it's a match! ${cardsToCompare[0].value} and ${cardsToCompare[1].value}`);
+        
+        if(pairsFound == 8){
+            overlayWin(); 
         }
+    } else {
+        flipBack();
+        console.log(`it's not a match! ${cardsToCompare[0].value} and ${cardsToCompare[1].value}`);
     }
+    
 }
 
 
 function flipBack(){
-    console.log(cardsToCompare);
     for(let card of cardsElem) {
         for(let value of cardsToCompare){
             if(card.attributes[1].value == value.value){
@@ -67,8 +76,19 @@ function flipBack(){
 
 
 function overlayWin(){
-    console.log(winElem[0]);
-    winElem[0].classList.add('show');
+    console.log(winElem);
+    winElem.classList.add('show');
+    
+    winExitElem.addEventListener('click', () => {
+        winElem.classList.remove('show');
+        resetGame();
+    });
 }
 
-// TODO: add so the exit button works
+function resetGame() {
+    for(let card of cardsElem) {
+        card.classList.remove('flip');
+    }
+    pairsFound = 0;
+    shuffleCards();
+}

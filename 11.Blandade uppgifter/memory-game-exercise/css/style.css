@@ -26,6 +26,8 @@ body {
     justify-content: center;
     align-items: center;
     color: #ffffff;
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
     box-shadow: 2px 2px 5px #000000;
     position: relative;
     transition: transform 0.8s;
@@ -36,8 +38,6 @@ body {
 .front, .back {
     position: absolute;
     backface-visibility: hidden;
-    font-size: 1.5em;
-    padding: 100px 100px;
 }
 
 .flip {
@@ -46,6 +46,8 @@ body {
 
 .front {
     transform: rotateY(180deg);
+    padding: 50px;
+    font-size: 1.em;
 }
 
 .back {
@@ -53,6 +55,7 @@ body {
     opacity: 0.3;
     background-image: radial-gradient(circle at center center, #000000, #ffffff00), repeating-radial-gradient(circle at center center, #000000, #000000, 16px, transparent 32px, transparent 16px);
     background-blend-mode: multiply;
+    padding: 100px 100px;
 }
 
 .overlay {

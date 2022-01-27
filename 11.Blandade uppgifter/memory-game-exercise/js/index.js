@@ -8,17 +8,15 @@ shuffleCards();
 
 console.log(cardsElem);
 
-
-/*  *  *  *  *  *  TODO  *  *  *  *  *  *\
-  - Make cards unclickable when the
-   front of the card is visible
-\*  *  *  *  *  *  *  *  *  *  *  *  *  */
-
+// Adds event listeners
 for(let card of cardsElem) {
     //console.log("card: ", card);
-    card.addEventListener('click', (event) => {
-        card.classList.add('flip');
-        compareCards(card);
+
+    card.childNodes[3].addEventListener('click', (event) => {
+        if(cardsToCompare.length < 2){
+            card.classList.add('flip');
+            compareCards(card);
+        }
     });
 }
 
@@ -31,18 +29,19 @@ function shuffleCards() {
 
 
 function compareCards(card){
-    setTimeout(() => {
-        let value = card.attributes[1].value;
-        console.log(`value: `, value);
-        cardsToCompare.push({value: value, card: card});
+    console.log(`cardsToCompare: `, cardsToCompare);
+    let value = card.attributes[1].value;
+    console.log(`value: `, value);
+    cardsToCompare.push({value: value, card: card});
     
-        if(cardsToCompare.length == 2) {
+    if(cardsToCompare.length == 2) {
+        setTimeout(() => {
             checkMatch();
             cardsToCompare = [];
             console.log(`Pairs so far: ${pairsFound}`);
             console.log('----------');
-        }
-    }, 1000);
+        }, 1000);
+    }
 }
 
 
@@ -92,3 +91,8 @@ function resetGame() {
     pairsFound = 0;
     shuffleCards();
 }
+
+
+/*- -  -   -    -        -    -   -  - -*\
+| https://codepen.io/monbjo/pen/BamygKE  |
+\*- -  -   -    -        -    -   -  - -*/

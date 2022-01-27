@@ -37,7 +37,7 @@ body {
     position: absolute;
     backface-visibility: hidden;
     font-size: 1.5em;
-    padding: 20px;
+    padding: 100px 100px;
 }
 
 .flip {
@@ -46,6 +46,13 @@ body {
 
 .front {
     transform: rotateY(180deg);
+}
+
+.back {
+    background-color: #ffffff00;
+    opacity: 0.3;
+    background-image: radial-gradient(circle at center center, #000000, #ffffff00), repeating-radial-gradient(circle at center center, #000000, #000000, 16px, transparent 32px, transparent 16px);
+    background-blend-mode: multiply;
 }
 
 .overlay {

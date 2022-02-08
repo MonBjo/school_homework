@@ -30,3 +30,7 @@ I'm having a small project to create a Discord-bot and I struggled greatly with 
 9. Objekt
 10. DOM-trädet
 11. Blandade uppgifter på ovan
+
+    We got an [assingment](https://github.com/MonBjo/hangman) wich is grade-based and I  worked on it with [Lei](https://github.com/Lilyklingy). (Awesome job!)
+
+12. Async

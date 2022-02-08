@@ -25,12 +25,13 @@ I'm having a small project to create a Discord-bot and I struggled greatly with 
 
 ## Javascript with ES6+
 6. Flow Control
-7. Funktioner
+7. Functions
 8. Arrays
-9. Objekt
-10. DOM-trädet
-11. Blandade uppgifter på ovan
+9. Objects
+10. DOM-tree
+11. JSmix
 
     We got an [assingment](https://github.com/MonBjo/hangman) wich is grade-based and I  worked on it with [Lei](https://github.com/Lilyklingy). (Awesome job!)
 
 12. Async
+13. APIs

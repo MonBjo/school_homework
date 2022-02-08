@@ -1,0 +1,7 @@
+#todos {
+    height: 800px;
+    border: 1px solid black;
+    overflow-y: scroll;
+    border-radius: 3px;
+    list-style-type: "x    ";
+}

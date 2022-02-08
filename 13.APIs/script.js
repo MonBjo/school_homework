@@ -1,0 +1,81 @@
+/**
+ * Fetch - anrop
+ * TODO API
+ * 
+ * URL: https://awesome-todo-api.herokuapp.com/tasks
+ */
+
+// fetch('https://awesome-todo-api.herokuapp.com/tasks').then((response) => {
+//     console.log(response);
+//     return response.json(); // Gör om svaret från webbservern till ett JSON-format som vi kan använda
+// }).then((data) => {
+//     console.log(data); // Svaret från webbservern i ett JSON-format
+// });
+
+const todoListElem = document.querySelector('#todos');
+const inputElem = document.querySelector('#todo-text');
+const addTodoButton = document.querySelector('#add-todo');
+
+function createTodoItem(todo) {
+    const todoItem = document.createElement('li');
+    todoItem.innerText = todo.task;
+    todoListElem.append(todoItem);
+}
+
+function displayTodos(todos) {
+    todoListElem.innerHTML = '';
+
+    console.log('Display todos', todos);
+    for (const todo of todos) {
+        console.log(todo);
+        if (todo.hasOwnProperty('task')) {
+            createTodoItem(todo);
+        }
+    }
+}
+
+async function getTodos() {
+    const response = await fetch('https://awesome-todo-api.herokuapp.com/tasks');
+    const data = await response.json();
+    console.log("getTodos > data: ", data);
+
+    displayTodos(data.todos);
+}
+
+async function addTodo(todoText) {
+    const body = {
+        task: todoText
+    }
+
+    const response = await fetch('https://awesome-todo-api.herokuapp.com/tasks', {
+        method: 'POST',
+        body: JSON.stringify(body),
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    });
+    const data = await response.json();
+    console.log("addTodo > data: ", data);
+    displayTodos(data.todo);
+}
+
+/**
+ * Ta bort en todo
+ * 1. Lägg till id på varje li-tagg
+ * 2. Sätt en event-listener på varje li-tagg
+ * 3. När man klickar på en todo så hämta id:et från li-taggen
+ * 4. Gör ett fetch-anrop med delete
+ */
+
+async function deleteTodo(todoId) {
+    
+}
+ 
+addTodoButton.addEventListener('click', () => {
+    const todoText = inputElem.value; // Hämta texten från inputfältet
+    console.log(`inputElem: ${inputElem}`);
+    console.log(`todoText: ${todoText}`);
+    addTodo(todoText);
+});
+
+getTodos();

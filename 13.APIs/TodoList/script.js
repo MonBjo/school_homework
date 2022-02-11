@@ -19,7 +19,14 @@ const addTodoButton = document.querySelector('#add-todo');
 function createTodoItem(todo) {
     const todoItem = document.createElement('li');
     todoItem.innerText = todo.task;
+    todoItem.setAttribute('data-id', todo.id);
     todoListElem.append(todoItem);
+
+    todoItem.addEventListener('click', (event) => {
+        const todoItemId = event.target.getAttribute('data-id');
+        
+        deleteTodo(todoItemId);
+    });
 }
 
 function displayTodos(todos) {
@@ -37,7 +44,7 @@ function displayTodos(todos) {
 async function getTodos() {
     const response = await fetch('https://awesome-todo-api.herokuapp.com/tasks');
     const data = await response.json();
-    console.log("getTodos > data: ", data);
+    console.log(data);
 
     displayTodos(data.todos);
 }
@@ -55,7 +62,7 @@ async function addTodo(todoText) {
         }
     });
     const data = await response.json();
-    console.log("addTodo > data: ", data);
+    console.log(data);
     displayTodos(data.todo);
 }
 
@@ -68,13 +75,20 @@ async function addTodo(todoText) {
  */
 
 async function deleteTodo(todoId) {
+    // Lägg till funktionalitet för att ta bort en todo
+    const response = await fetch(`https://awesome-todo-api.herokuapp.com/tasks/${todoId}`, {
+        method: 'DELETE'
+    });
+    const data = await response.json();
     
+    if (data.success) {
+        getTodos();
+    }
 }
  
 addTodoButton.addEventListener('click', () => {
     const todoText = inputElem.value; // Hämta texten från inputfältet
-    console.log(`inputElem: ${inputElem}`);
-    console.log(`todoText: ${todoText}`);
+
     addTodo(todoText);
 });
 

@@ -77,6 +77,8 @@ function compareWords(newWord){
         let addWordHTML = `<p>${newWord}</p>`;
         wordDisplayListElems.splice(wordListAdd, 0, addWordHTML);
         previousWord = newWord;
+    } else if(newWord == wordPairToGuess[1] && difference == 0) {
+        alert("you won!");
     } else { 
         console.log("bad guess");
     }

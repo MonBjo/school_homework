@@ -1,0 +1,23 @@
+#searchField {
+    display: block;
+    margin: 20px auto;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    text-align: center;
+    width: 50vw;
+}
+
+.searchedPhoto {
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.placeholderImg {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background-color: lightgray;
+    margin: 5px;
+    border-radius: 5px;
+}

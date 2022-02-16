@@ -41,7 +41,6 @@ function lightbox(){
         photo.addEventListener('click', function(event) {
             console.log("clickety clakety");
         });
-        const photoURLLarge = `https://live.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}_b.jpg`;
     }
 }
 
@@ -50,7 +49,7 @@ function displayPhotos(searchedPhotos) {
     photosElem.innerHTML = ` `;
     for(let photo of searchedPhotos) {
         const photoURLThumbnail = `https://live.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}_q.jpg`;
-        photosElem.innerHTML += `<img class="searchedPhoto" src="${photoURLThumbnail}">`;
+        photosElem.innerHTML += `<img class="searchedPhotoThumbnail" src="${photoURLThumbnail}">`;
         const photoURLLarge = `https://live.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}_b.jpg`;
     }
     photosElem.querySelectorAll('.searchedPhoto');

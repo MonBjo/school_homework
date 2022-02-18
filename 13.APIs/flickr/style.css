@@ -28,11 +28,16 @@
     height: 100%; 
     overflow: auto;
     background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.7); 
+    background-color: rgba(0,0,0,0.8);
 }
 
-.lightbox-photos {
-    margin: auto;
+.flex {
+    justify-content: center;
+    align-items: center;
+}
+
+#lightbox-photo {
+    border-radius: 5px;
     width: 80%;
 }
 

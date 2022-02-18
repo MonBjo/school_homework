@@ -6,9 +6,13 @@ const API_KEY = `45ee5e5758f149d9560aff38950ac9d9`;
 const SECRET = `34b61fb57ef5adfd`;
 const BASE_URL = `https://api.flickr.com/services/rest`;
 const METHOD = `?method=flickr.photos.search`;
-const EXTRAS = `description,owner_name,icon_server`;
 const SEARCH_AMOUNT = 25;
 
+
+lightboxElem.addEventListener('click', function() {
+    lightboxElem.classList.remove("flex");
+    lightboxElem.style.display = "none";
+});
 
 searchFieldElem.addEventListener('keypress', function(event) {
     //console.log(event);
@@ -23,7 +27,7 @@ searchFieldElem.addEventListener('keypress', function(event) {
 
 
 async function getPhotos(searchText) {
-    const response = await fetch(`${BASE_URL}${METHOD}&api_key=${API_KEY}&text=${searchText}&per_page=${SEARCH_AMOUNT}&content_type=1&sort=relevance&extras=${EXTRAS}&format=json&nojsoncallback=1`);
+    const response = await fetch(`${BASE_URL}${METHOD}&api_key=${API_KEY}&text=${searchText}&per_page=${SEARCH_AMOUNT}&content_type=1&sort=relevance&format=json&nojsoncallback=1`);
     const data = await response.json();
     // console.log("data", data);
 
@@ -49,8 +53,21 @@ function addThumbnailEvent() {
     const thumbnailsElems = thumbnailContaierElem.querySelectorAll('.searchedPhotoThumbnail');
     for(let thumbnail of thumbnailsElems) {
         thumbnail.addEventListener('click', function() {
-            console.log("this", this.src);
+            //console.log("this", this);
+            let photoURLLarge = generateLargeURL(this.src);
+
+            lightboxElem.innerHTML = `<img id="lightbox-photo"src="${photoURLLarge}">`;
+            lightboxElem.classList.add("flex");
+            lightboxElem.style.display = "flex";
         });
     }
 }
 
+function generateLargeURL(url) {
+    //console.log("url before: ", url);
+    let newUrl = url.substring(0, url.length-5);
+    //console.log("newUrl substring: ", newUrl);
+    newUrl += "b.jpg";
+    //console.log("newUrl", newUrl);
+    return newUrl;
+}

@@ -35,3 +35,4 @@ I'm having a small project to create a Discord-bot and I struggled greatly with 
 
 12. Async
 13. APIs
+14. Higher order functions

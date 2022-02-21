@@ -30,7 +30,6 @@ let books = [
 ]
 
 let booksByAuthor = books.filter(book => {
-    console.log("book.author", book.author);
     if(book.author == "Jules Verne") {
         return book;
     }
@@ -41,7 +40,36 @@ console.log("booksByAuthor", booksByAuthor);
 
 
 console.log("--- practice 3 ---");
+
+let people = [
+    { age: 10, name: 'Gun-Britt'},
+    { age: 20, name: 'Conny'},
+    { age: 30, name: 'Aurora'},
+    { age: 40, name: 'Kalle'},
+    { age: 55, name: 'Max'},
+]
+
+let combinedAge = people.reduce((previousValue, currentPerson) => {
+    return previousValue + currentPerson.age;
+}, 0);
+
+console.log("combinedAge", combinedAge);
+
+
 console.log("--- practice 4 ---");
+
+numbers = [2, 3, 1, 5, 4, 10, 8, 7, 9, 6];
+
+let highestNumber = numbers.reduce((previousValue, currentValue) => {
+    if(currentValue > previousValue) {
+        previousValue = currentValue;
+    }
+    return previousValue;
+}, 0);
+
+console.log("highestNumber: ", highestNumber);
+
+
 console.log("--- practice 5 ---");
 console.log("--- practice 6 ---");
 console.log("--- practice 7 ---");

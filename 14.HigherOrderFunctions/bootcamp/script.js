@@ -29,13 +29,7 @@ let books = [
     { author: 'Victor Hugo', title: ' The Hunchback of Notre-Dame'},
 ]
 
-const bookTitles = books.filter(book => {
-    const bookTitle = book.title;
-    return bookTitle;
-});
 
-console.log("books: ", books);
-console.log("bookTitles: ", bookTitles);
 
 
 console.log("--- practice 3 ---");

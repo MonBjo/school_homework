@@ -29,7 +29,15 @@ let books = [
     { author: 'Victor Hugo', title: ' The Hunchback of Notre-Dame'},
 ]
 
+let booksByAuthor = books.filter(book => {
+    console.log("book.author", book.author);
+    if(book.author == "Jules Verne") {
+        return book;
+    }
+});
 
+console.log("books", books);
+console.log("booksByAuthor", booksByAuthor);
 
 
 console.log("--- practice 3 ---");

@@ -71,5 +71,31 @@ console.log("highestNumber: ", highestNumber);
 
 
 console.log("--- practice 5 ---");
+
+// Same books as before
+console.log("books: ", books);
+
+let bookTitles = books.map((book) => {
+    return book.title;
+});
+console.log("bookTitles: ", bookTitles);
+
+
 console.log("--- practice 6 ---");
+
+// Same people as before
+console.log("people: ", people);
+
+let anyoneUnderForty = people.map((person) => {
+    if(person.age >= 40) {
+        return false;
+    } else {
+        return true;
+    }
+});
+console.log("anyoneUnderForty: ", anyoneUnderForty);
+
+
 console.log("--- practice 7 ---");
+
+

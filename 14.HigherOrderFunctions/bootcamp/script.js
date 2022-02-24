@@ -98,4 +98,24 @@ console.log("anyoneUnderForty: ", anyoneUnderForty);
 
 console.log("--- practice 7 ---");
 
+let travleLocations = [
+    { name: 'Sweden', continent: 'Europe'},
+    { name: 'Norway', continent: 'Europe'},
+    { name: 'South Africa', continent: 'Africa'},
+    { name: 'Egypt', continent: 'Africa'},
+    { name: 'China', continent: 'Asia'},
+    { name: 'Japan', continent: 'Asia'},
+    { name: 'Australia', continent: 'Oceania / Australia'},
+    { name: 'New Zealand', continent: 'Oceania / Australia'},
+    { name: 'USA', continent: 'North America'},
+    { name: 'Canada', continent: 'North America'},
+    { name: 'Mexico', continent: 'North America'},
+    { name: 'Brazil', continent: 'South America'},
+    { name: 'Argentina', continent: 'South America'},
+];
 
+let countries = travleLocations.map((country) => {
+    console.log(country.name);
+});
+
+let continents = travleLocations

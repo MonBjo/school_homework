@@ -115,7 +115,6 @@ let travleLocations = [
 ];
 
 let countries = travleLocations.map((country) => {
-    console.log(country.name);
+    return country.name;
 });
-
-let continents = travleLocations
+console.log(countries);

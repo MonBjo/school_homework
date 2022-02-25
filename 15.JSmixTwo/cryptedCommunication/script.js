@@ -1,3 +1,3 @@
-import {key} from 'key.js';
+import {key} from './key.js';
 
 console.log(key);

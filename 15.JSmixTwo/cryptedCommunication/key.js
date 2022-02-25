@@ -1,4 +1,4 @@
-const key = [
+export const key = [
     ['A', 'Z'], 
     ['B', 'H'], 
     ['C', 'Y'], 
@@ -40,5 +40,3 @@ const key = [
     ['.', 'G'], 
     [' ', 'P']
 ];
-
-export {key};

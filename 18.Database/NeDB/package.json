@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "nedb-promise": "^2.0.1"
+    "nedb-promise": "^2.0.1",
+    "nodemon": "^2.0.16"
   }
 }

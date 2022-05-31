@@ -37,5 +37,11 @@ I'm having a small project to create a Discord-bot and I struggled greatly with 
 13. APIs
 14. Higher order functions
 15. JSmix 2
-16. React and redux
-17. Node.js
+
+## Frameworks
+links
+
+## backend
+16. Node.js
+17. Database
+18. BackendMix

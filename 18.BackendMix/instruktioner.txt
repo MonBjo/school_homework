@@ -1,0 +1,3 @@
+https://github.com/F21-Backend-med-NodeJS/lektion-31-maj
+
+Lägg till i Sinus API och Todo API att man inte kan komma åt dessa utan en API-nyckel. Det ska även finnas en endpoint där man kan hämta en API-nyckel.

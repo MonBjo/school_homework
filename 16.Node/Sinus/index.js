@@ -18,25 +18,20 @@ app.use(express.json());
 // With middleware
 app.use((request, response, next) => {
   console.log(`In middleware before route: ${request.url} and metod: ${request.method}`);
-  fs.readFile('products.json', 'utf8', (error, data) => {
+  next();
+});
+
+app.use('/api/allProducts', (request, response) => {
+  const data = fs.readFile('products.json', 'utf8', (error, data) => {
     if (error) {
       console.log("error in middleware: ", error);
     }
     console.log("Data in store: ", data);
     return data;
   });
-
-  next(data);
+  response.json(data);
 });
 
-app.use('/', (request, response) => {
-  console.log(data);
-  response.send("Hello");
-});
-
-app.use('/api/allProducts', (request, response) => {
-  response.send("I will show all products");
-});
 
 // Wrong url
 app.use((request, response) => {

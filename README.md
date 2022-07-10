@@ -6,7 +6,7 @@ _This is the homework that I've done, roughly categorized. _
 1. Flexbox
 2. Grid *(with some flexbox)*
 
-    We got an assignment; [Insurance page](https://github.com/Hampus83/insurance-exam) and I worked on it with [Hampus](https://github.com/Hampus83). (Great job!)
+    Group assignment; [Insurance page](https://github.com/Hampus83/insurance-exam) and I worked on it with [Hampus](https://github.com/Hampus83). (Great job!)
 
 3. Responsive
 4. Forms
@@ -24,7 +24,7 @@ _This is the homework that I've done, roughly categorized. _
 10. DOM-tree
 11. JSmix
 
-    We got an assignment; [Hangman](https://github.com/MonBjo/hangman) and I worked on it with [Lei](https://github.com/Lilyklingy). (Awesome job!)
+    Group assignment; [Hangman](https://github.com/MonBjo/hangman) and I worked on it with [Lei](https://github.com/Lilyklingy). (Awesome job!)
 
 12. Async
 13. APIs
@@ -34,9 +34,18 @@ _This is the homework that I've done, roughly categorized. _
     Individual assignment; [solaris](https://github.com/MonBjo/solaris)
 
 ## Frameworks
-links
+
+00. I never finished any homework for this class as react had an update in the middle of the course and I never came around to finish anything. 
+
+    Individual assigment; [E-Wallet](https://github.com/MonBjo/e-wallet)
+
+    Group assignment;  [Air Bean](https://github.com/christopherwahlstrom/AirBean) with [Hampus](https://github.com/Hampus83), [Ricky](https://github.com/RickyJohansson) and [Christopher](https://github.com/christopherwahlstrom). (So much fun!)
 
 ## backend
 16. Node.js
 17. Database
 18. BackendMix
+
+    Group assignment; [Air Bean API](https://github.com/RickyJohansson/Airbean-API---Bunny-Scientists) with [Ricky](https://github.com/RickyJohansson) and [William](https://github.com/Williamlof). (Awsome job!)
+
+    Individual assignment; [Air Bean admin API](https://github.com/MonBjo/Airbean-API-admin)

@@ -1,5 +1,9 @@
 # School Homework
-_This is the homework that I've done, roughly categorized. _
+_This is the homework that I've done, roughly categorized._
+
+_Some courses that we've done are more practical and didn't involve any programming so they obiously don't show here. We have also learned about UX/UI (mostly done in Figma), an introduction to programming and computer logics, and how to work Agile._
+
+_I [study](https://www.folkuniversitetet.se/vara-skolor/yh-utbildningar/alla-yh-utbildningar/it-data/frontendutvecklare/) to become a frontend dev._
 
 ## HTML and CSS
 0. Som basics *(not included)*

@@ -39,7 +39,7 @@ _I [study](https://www.folkuniversitetet.se/vara-skolor/yh-utbildningar/alla-yh-
 
 ## Frameworks
 
-00. I never finished any homework for this class as react had an update in the middle of the course and I never came around to finish anything. 
+00. I never finished any homework for this class as react had an update in the middle of the course, I was confused so I never came around to finish anything, but I still did well on my assignments. 
 
     Individual assigment; [E-Wallet](https://github.com/MonBjo/e-wallet)
 
